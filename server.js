@@ -222,9 +222,24 @@ const server = http.createServer((req, res) => {
 
 //setup listen and allow port assignment.
 const PORT = process.env.PORT || 8000;
-server.listen(PORT, ()=> console.log(`Running on port ${PORT}...`))
+server.listen(PORT, ()=> console.log(`
+              o
+              |    o
+              |   /
+              |  / 
+            .-| /.
+             (|/ )
+    .==================.
+    | .--------------. |
+    | |--.__.--.__.--| |
+    | |--.__.--.__.--| |
+    | |--.__.--.__.--| |
+    | |--.__.--.__.--| |
+    | |--.__.--.__.--| |
+    | '--------------'o|
+    | O O  """""""    o|
+    '=================='
+Turning on the tv to port ${PORT}...
+`))
 
-////////////////gang gang we in here///////////////////////////////////
-// WHAT IT DO!
-// i'm here addin lines yyooooooo
 
