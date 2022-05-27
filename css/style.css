@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+/* ----------------- */
+/* Custom Properties */
+/* ----------------- */
+
+:root {
+    /* Fonts */
+    --ff-primary: 'Comic Neue', cursive;
+
+    /* Font sizes */
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    /* Font weights */
+    --fw-reg: 400;
+    --fw-bold: 700;
+
+    /* Colours */
+    --clr-light: rgb(207, 108, 108);
+    --clr-dark: rgb(58, 12, 12);
+    --clr-accent: rgb(241, 0, 0);
+}
+
+/* ----------------- */
+/* General Styles */
+/* ----------------- */
+
+html {
+    scroll-behavior: smooth; /* You are welcome */
+}
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 40vh;
+}
+
+/* ----------------- */
+/* Typography */
+/* ----------------- */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1);
+}
