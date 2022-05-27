@@ -73,10 +73,8 @@ const server = http.createServer((req, res) => {
     __dirname, 
     req.url === '/' ? 'index.html' : req.url
   );
-
-  console.log('filepath',filePath)
-   
-  //set content type
+  
+  //set content type based on the extension
   switch(extName){
     case '.js':
       contentType = 'text/javascript';
