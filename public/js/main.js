@@ -1,3 +1,4 @@
+console.log('hello from js')
 document.querySelector('#clickMe').addEventListener('click', makeReq)
 
 async function makeReq(){
